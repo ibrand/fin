@@ -2,7 +2,7 @@ const clipList = require('./clipList')
 const io = require('socket.io')(8080)
 const Session = require('./session')
 
-let session = new Session(clipList, "Out_to_Sea")
+let session = new Session(clipList, "Now_We_Wait")
 
 io.on('connection', function (socket) {
     if (io.engine.clientsCount === 1) {
